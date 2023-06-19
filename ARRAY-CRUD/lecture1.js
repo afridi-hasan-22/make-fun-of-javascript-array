@@ -13,3 +13,10 @@ const arrU2 = [1,2,3];
 arrU1.unshift(4);
 arrU1.unshift(...arrU2)
 console.log(arrU1);
+
+//use splice to insert at the given index
+const arrS1 = [1,2,3,5,9];
+arrS1.splice(3, 0, 4);
+const arrS2 = [6,7,8]
+arrS1.splice(5, 0, ...arrS2)
+console.log(arrS1);
